@@ -44,7 +44,6 @@ export function EasterEggTerminal() {
             <span>Available commands:</span>
             <span>- <span className="text-primary">whoami</span>: Display user profile</span>
             <span>- <span className="text-primary">ls projects</span>: List project repositories</span>
-            <span>- <span className="text-primary">fetch resume</span>: Download secure resume payload</span>
             <span>- <span className="text-primary">clear</span>: Clear terminal screen</span>
           </div>
         )
@@ -62,12 +61,6 @@ export function EasterEggTerminal() {
             <span>[DIR] Pharma-Triage-Env    (Agentic AI)</span>
           </div>
         )
-        break
-      case "fetch resume":
-        output = "Initiating secure download protocol... Transferring resume.pdf..."
-        setTimeout(() => {
-          window.open('/resume.pdf', '_blank')
-        }, 1000)
         break
       case "clear":
         setHistory([])
